@@ -1,0 +1,198 @@
+body {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  display: -webkit-flex;
+  flex-direction: column;
+  font-size: 16px;
+  background: #eeeeee;
+  overflow: hidden; }
+
+.head {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc; }
+  .head .back {
+    left: 0.1rem;
+    top: 0; }
+    .head .back i {
+      font-size: 14px; }
+  .head .more {
+    right: 0.1rem;
+    top: 0; }
+  .head h3 {
+    text-align: center;
+    font-size: 0.14rem;
+    font-weight: bold; }
+
+main {
+  width: 95%;
+  height: 0.25rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.14rem;
+  line-height: 0.25rem;
+  position: absolute;
+  bottom: 0.7rem;
+  left: 2.5%; }
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  height: auto; }
+  .content .address {
+    background: #ffffff;
+    padding: 0.12rem; }
+    .content .address .tel {
+      font-size: 0.1rem;
+      margin-left: 20px; }
+      .content .address .tel b {
+        font-size: 0.12rem;
+        padding-right: 0.12rem; }
+    .content .address .add {
+      padding-top: 0.12rem;
+      display: -webkit-flex;
+      align-items: center; }
+      .content .address .add p {
+        font-size: 0.12rem;
+        padding-left: 0.05rem;
+        line-height: 0.18rem; }
+  .content .dian {
+    margin-top: 0.14rem;
+    background: #ffffff;
+    padding-left: 0.12rem;
+    padding-right: 0.12rem; }
+    .content .dian .tittle {
+      height: 0.44rem;
+      line-height: 0.44rem; }
+      .content .dian .tittle i {
+        color: #ff6d1f;
+        font-size: 18px;
+        padding-right: 0.05rem; }
+      .content .dian .tittle span {
+        font-size: 0.12rem; }
+    .content .dian .info {
+      padding-bottom: 0.12rem; }
+      .content .dian .info dl {
+        display: -webkit-flex; }
+        .content .dian .info dl dt img {
+          width: 100%;
+          height: 100%; }
+        .content .dian .info dl dd {
+          padding-left: 0.05rem; }
+          .content .dian .info dl dd h2 {
+            padding-top: 0.02rem;
+            font-size: 0.14rem;
+            color: #666;
+            line-height: 0.18rem; }
+          .content .dian .info dl dd .jie {
+            padding-top: 0.3rem;
+            display: -webkit-flex;
+            justify-content: space-between;
+            align-items: center; }
+            .content .dian .info dl dd .jie .price b {
+              display: block;
+              font-size: 0.14rem; }
+            .content .dian .info dl dd .jie .price b:nth-child(1) {
+              font-size: 0.14rem;
+              color: red; }
+            .content .dian .info dl dd .jie .price b:nth-child(2) {
+              font-size: 0.1rem;
+              color: #d0d0d0;
+              text-decoration: line-through; }
+            .content .dian .info dl dd .jie .cao {
+              width: 100px;
+              height: 0.3rem;
+              border: 1px solid #ccc;
+              border-radius: 6px;
+              display: -webkit-flex; }
+              .content .dian .info dl dd .jie .cao span {
+                display: inline-block;
+                width: 33px;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border-right: 1px solid #ccc; }
+              .content .dian .info dl dd .jie .cao span:nth-child(3) {
+                border: none; }
+    .content .dian .list {
+      padding-bottom: 0.12rem; }
+      .content .dian .list ul li {
+        display: -webkit-flex;
+        justify-content: space-between;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        font-size: 0.12rem;
+        color: #666; }
+      .content .dian .list ul li:nth-child(3) p {
+        color: red;
+        font-size: 0.14rem; }
+  .content .pay {
+    margin-top: 15px;
+    background: #fff;
+    margin-bottom: 15px; }
+    .content .pay ul li {
+      height: 0.45rem;
+      line-height: 0.45rem;
+      border-bottom: 1px solid #ccc;
+      padding-left: 0.12rem;
+      padding-right: 0.12rem;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.14rem;
+      color: #6e6e6e; }
+      .content .pay ul li i {
+        color: #333;
+        font-size: 0.14rem; }
+      .content .pay ul li .toggle-radio input {
+        display: none; }
+      .content .pay ul li .toggle-radio input:checked + .tarck {
+        background: #4cd964;
+        border-color: #4cd964; }
+      .content .pay ul li .toggle-radio input:checked + .tarck .icon {
+        margin-left: 30px; }
+      .content .pay ul li .toggle-radio .tarck {
+        width: 60px;
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        border-radius: 15px;
+        background: #ffffff; }
+      .content .pay ul li .toggle-radio .icon {
+        width: 28px;
+        height: 29px;
+        border: 1px solid #CCCCCC;
+        border-radius: 28px;
+        background: #ffffff;
+        -webkit-transition: margin-left 0.8s; }
+
+.foot {
+  height: 0.6rem;
+  border-top: 1px solid #eeeeee;
+  display: -webkit-flex;
+  background: #ffffff; }
+  .foot p:nth-child(1) {
+    flex: 1;
+    padding-right: 0.12rem;
+    padding-top: 0.1rem;
+    color: #f71919; }
+    .foot p:nth-child(1) b {
+      color: #f71919; }
+    .foot p:nth-child(1) span {
+      display: block;
+      padding-right: 0.12rem;
+      color: #666;
+      font-size: 0.14rem; }
+  .foot p:nth-child(2) {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    background: #fc4141;
+    color: #ffffff;
+    line-height: 0.6rem; }
+
+/*# sourceMappingURL=demo.css.map */
